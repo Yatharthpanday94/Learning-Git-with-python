@@ -61,7 +61,10 @@
   print(os.__file__) ----> os file directory
 
 - LEGB Rule (Variable Scope):
-     	
+     	- Local
+	- Enclosing
+	- Global
+	- Built-in
 	
 
 
