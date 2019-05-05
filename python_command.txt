@@ -1,0 +1,68 @@
+- List : 
+   list_1 = [ 'a' , 'b' , 'c' ]
+   list_2 = [ 'd' , 'e' , 'f' ]
+   list_3 = [ 'z' , 'd' , 'a' ]
+   list_4 = ['2', '5' ,'3', '1']
+   Empty_list = []
+   Empty_list = list()
+	functions: 	- list_1.append('d') -----> [ 'a' , 'b' , 'c' , 'd' ]
+		- list_1.insert(0,1) ----> [ 1 , 'a' , 'b' , 'c' ]
+		- list_1.extend(list_2) ---->[ 'a' , 'b' , 'c' , 'd' , 'e' , 'f' ]
+		- list_1.remove('a') -----> [ 'b' , 'c' , 'd' ]
+		- list_1.pop() -----> 'c' will be popped out and can be stored
+		- list_1.reverse() ------> [ 'c' , 'b' , 'a' ]
+		- list_3.sort() ------> [ 'a' , 'd' , 'z' ]
+		- list_3.sort(reverse = True) -----> [ 'z' , 'd' , 'a']
+		- sorted_courses = sorted(list_3) -----> [ 'a' , 'd' , 'z' ] # stored in new var without effecting old one
+		- min(list_4) -----> 1
+		- max(list_4) -----> 5
+		- sum(list_4) -----> 11
+		- print(list_1.index('a') -----> 0
+		- print('b' in list_1) -----> True
+		- for index, list in enumerate(course_1):
+			print(index, list)
+		- list_str = ' , '.join(list_1) ----> a, b, c
+		- new_list = list_str.split(',') # create list again ----> [ 'a' , 'b' , 'c' ]
+
+- Tuples : Immutable
+    tuple_1 = ( 'a' , 'b' , 'c' )
+
+- Sets: Un-ordered and No duplicates list
+    set_1 = { 'a' , 'b' , 'c', 'a' }
+    set_2 = { 'a' , 'b' , 'c', 'd' }
+    set_3 = { 'e' , 'd' , 'f', 'g' } 
+    Empty_set = set()   
+                   function: 	- print(set_1) -----> Always give unordered set ----> { 'b' , 'c' , 'a' }
+		- print(set_2.intersection(set_3)) ------>{ 'd' }
+		- print(set_2.difference(set_3)) ------>{  'a' , 'b' , 'c'}
+		- print(set_2.union(set_3)) ------>{  'a' , 'b' , 'c', 'e' , 'd' , 'f', 'g'}
+
+- Dictionaries: Key-Value Pairs
+   student = { 'name': 'Ravi' , 'age' :26 , 'courses' : [ 'Maths' , 'CompSci' ]}
+	function:	- print(student['courses']) ---->  [ 'Maths' , 'CompSci' ]
+		- print(student.get('name')) -----> 'Ravi'
+		- student.update({ 'name': 'Dev' , 'age' :25 , 'phone': 111-111-111})
+		   print(student) ----> { 'name': 'Ravi' , 'age' :26 , 'courses' : [ 'Maths' , 'CompSci' ], 'phone': 111-111-111 }
+		- del student ['age']
+		- student.pop('age')
+		- len(student) -----> 3
+		- print(student.keys()) ----> gives all keys
+		- print(student.values()) ----> gives all values
+		- print(student.items()) ----> gives all keys:values pairs
+		- for Key,Value in student.items():
+			print(Key, Value)
+
+- Functions:
+	def func(a,b):
+		sum = a+b
+		print(sum)
+
+- import os
+  print(os.__file__) ----> os file directory
+
+- LEGB Rule (Variable Scope):
+     	
+	
+
+
+
