@@ -63,7 +63,7 @@
 - LEGB Rule (Variable Scope):
      	- Local
 	- Enclosing
-	- Global
+	- Global: "global x" 
 	- Built-in
 	
 
